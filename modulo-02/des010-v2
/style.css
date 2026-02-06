@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores: Rosa#F5008D Amarelo#F5D500 Ciano#00E1F5*/
+body {
+    background-color: #00E1F5;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    
+    
+}
+
+body {
+    background-image: url("img/fundo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(6px);
+}
+
+
+/* Cabeçalho */
+header { 
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F5008D;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    } 
+
+/* Navegação */
+    nav, h1 {
+        margin: 10px;   
+    }
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #F5D500;
+}
+
+/* Configuração - Conteúdo principal */
+main {
+    width: 90%;
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.849);
+    
+}
+
+/* Subtítulos */
+
+@font-face {
+    font-family: "Bungee";
+    src: url("fonts/Bungee-Regular.ttf") format("truetype");}
+
+#primeiroSubtitulo, #segundoSubtitulo, #terceiroSubtitulo {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    color: white;
+    background-color: #F5D500;
+    font-size: 1.6em;
+    text-indent: 0;
+    
+}
+h2{
+    font-family: "Bungee", sans-serif;
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    h2{
+    font-family: "Bungee", sans-serif;
+    font-size: 130%;
+    margin-right: 10px;
+}
+}
+
+.imghtml, .imgcss, .imgjs {
+    width: 100px;
+    margin-left: 10px;
+    
+}
+
+/* Conteúdo principal */
+section {
+    padding: 20px;
+}
+
+/* Primeiro Conteúdo */
+
+.htmlcode { /* Imagem de um código HTML */
+    width: 60%;
+    float: right;
+    margin: 20px 0 10px 20px;
+    border: #F5D500 10px solid;
+    border-radius: 20px;
+}
+/* Configuração responsiva */
+@media (max-width: 1200px) {
+    #primeiroConteudo {
+        flex-direction: column;
+        text-align: left;
+        text-align: justify;
+        padding: 10px;
+
+    }
+    .htmlcode {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 20px auto;
+        
+    }
+}
+
+/* Segundo Conteúdo */
+
+.csscode { /* Imagem de um código em CSS */
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: #F5D500 10px solid;
+    border-radius: 20px;
+}
+@media (max-width: 1200px) {
+    #segundoConteudo {
+        flex-direction: column;
+        text-align: left;
+        text-align: justify;
+        padding: 10px;
+
+    }
+    .csscode {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 0px auto 20px auto;
+        
+    }
+}
+
+/* Terceiro Conteúdo */
+
+#imagensJS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+.jscode1, .jscode2 { /* Imagem de um código em JavaScript */
+    width: 45%;
+    border: #F5D500 10px solid;
+    border-radius: 20px;
+    margin: 10px 0px 20px 0px;
+}
+
+@media (max-width: 1200px) {
+    #terceiroConteudo {
+        flex-direction: column;
+        text-align: left;
+        text-align: justify;
+        padding: 10px;
+
+    }
+    .jscode1 {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin: 10px auto 20px auto;
+    }
+    .jscode2 {
+       display: none;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #F5008D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 1.4em;
+}
