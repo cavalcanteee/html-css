@@ -11,17 +11,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        td, tr, th {
+        td, th {
             border: 1px black  solid;
             padding: 15px;
         }
 
-        thead, tfoot, #title {
+        thead, tfoot, .title {
             background-color: gray;
             color: white;
         }
 
-        #title {
+        .title {
             text-align: left;
         }
 
@@ -34,20 +34,21 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
-                <th>Notas 1</th>
-                <th>Notas 2</th>
+                <th scope="col">Notas 1</th>
+                <th scope="col">Notas 2</th>
             </tr>
         </thead>
+        
         <tbody>
             <tr>
-                <th rowspan="3">Exatas</th>
-                <td>Mateḿatica</td>
+                <th rowspan="3" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -64,12 +65,12 @@
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
             </tr>
-            <tr id="title">
-                <th colspan="4" >Média de Exatas</th>
+            <tr class="title">
+                <th colspan="4" scope="row">Média de Exatas</th>
                 <td class="num">0.0</td>
             </tr>
             <tr>
-                <th rowspan="4">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -81,11 +82,12 @@
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
             </tr>
-            
         </tbody>
         <tfoot>
-            <th colspan="4" id="title">Média de Humanas</th>
-            <td class="num">0.0</td>
+            <tr>
+                <th colspan="4" class="title" scope="row">Média de Humanas</th>
+                <td class="num">0.0</td>
+            </tr>
         </tfoot>
     </table>
 </body>
