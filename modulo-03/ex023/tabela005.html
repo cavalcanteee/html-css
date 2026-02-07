@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 05</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px black solid;
+            padding: 20px;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .colnome{
+            background-color: red;
+        }
+
+        .colidade {
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="colnome" span="2">
+            <col class="colidade" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td class="num">xxx</td>
+                <td>xxx</td>
+            </tr>
+            <tr>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td class="num">xxx</td>
+                <td>xxx</td>
+            </tr>
+            <tr>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td class="num">xxx</td>
+                <td>xxx</td>
+            </tr>
+            <tr>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td class="num">xxx</td>
+                <td>xxx</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
