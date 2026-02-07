@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        
+        td.num {
+            text-align: right;
+        }
+
+        td.total {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arroz</td>
+                <td class="num">10</td>
+                <td class="num">R$ 15,00</td>
+            </tr>
+            <tr></tr>
+                <td>Feijão</td>
+                <td class="num">5</td>
+                <td class="num">R$ 10,00</td>
+            </tr>
+            <tr>
+                <td>Macarrão</td>
+                <td class="num">8</td>
+                <td class="num">R$ 12,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" class="total">
+                    Total
+                </td>
+                <td class="num"><strong>R$ 37,00</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
