@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 04</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            border: 1px solid black;
+        }
+
+        div{
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, odio corporis? Atque minima, dolore repudiandae debitis consequuntur facere doloribus omnis quibusdam molestiae tempore commodi iusto, facilis quia, eum nostrum veritatis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium recusandae consequatur et sequi nulla pariatur at dolor autem adipisci modi non, temporibus ipsum quod distinctio voluptas ut ipsa laboriosam?</p>
+
+    <!--
+        sanbox: segurança total
+        allow-scripts: permite apenas os scripts
+        allow-forms: permite apenas os fomulários
+    -->
+
+    <div id="primeiro">
+        <h2>Com permissão</h2>
+        <iframe src="extra/pag004.html" frameborder="0" referrerpolicy="no-referrer" sandbox="allow-forms"></iframe>
+    </div>
+    
+    <div id="segundo">
+        <h2>Sem permissão</h2>
+        <iframe src="extra/pag004.html" frameborder="0" referrerpolicy="no-referrer" sandbox="sandbox"></iframe>
+    </div>
+
+    <br>
+
+        <iframe src="extra/pag005.html" frameborder="0" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+
+        <iframe src="extra/pag005.html" frameborder="0" referrerpolicy="no-referrer" sandbox="sandbox"></iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, odio corporis? Atque minima, dolore repudiandae debitis consequuntur facere doloribus omnis quibusdam molestiae tempore commodi iusto, facilis quia, eum nostrum veritatis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium recusandae consequatur et sequi nulla pariatur at dolor autem adipisci modi non, temporibus ipsum quod distinctio voluptas ut ipsa laboriosam?</p>
+</body>
+</html>
