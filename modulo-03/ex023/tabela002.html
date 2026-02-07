@@ -7,6 +7,7 @@
     <style>
         table {
             border-collapse: collapse;
+            width: 500px;
         }
 
         thead, tfoot {
@@ -39,39 +40,74 @@
 </head>
 <body>
     <table>
-        <caption>Compras do mês</caption>
+        
         <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Preço</th>
+            <tr> <!--scope="col" Conteúdo está abaixo, na mesma coluna-->
+                <th scope="col">Produto</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preço unit.</th>
             </tr>
         </thead>
+        
+        <caption>Compras do mês</caption>
+
         <tbody>
             <tr>
                 <td>Arroz</td>
                 <td class="num">10</td>
-                <td class="num">R$ 15,00</td>
+                <td class="num">R$ 2,99</td>
             </tr>
             <tr></tr>
                 <td>Feijão</td>
                 <td class="num">5</td>
-                <td class="num">R$ 10,00</td>
+                <td class="num">R$ 4,50</td>
             </tr>
             <tr>
                 <td>Macarrão</td>
                 <td class="num">8</td>
-                <td class="num">R$ 12,00</td>
+                <td class="num">R$ 2,49</td>
+            </tr>
+            <tr>
+                <td>Café</td>
+                <td class="num">2</td>
+                <td class="num">R$ 5,99</td>
+            </tr>
+            <tr>
+                <td>Carne</td>
+                <td class="num">5</td>
+                <td class="num">R$ 24,99</td>
+            </tr>
+            <tr>
+                <td>Farinha</td>
+                <td class="num">3</td>
+                <td class="num">R$ 4,19</td>
+            </tr>
+            <tr>
+                <td>Sal</td>
+                <td class="num">4</td>
+                <td class="num">R$ 1,49</td>
+            </tr>
+            <tr>
+                <td>Refrigerante</td>
+                <td class="num">8</td>
+                <td class="num">R$ 9,99</td>
+            </tr>
+            <tr>
+                <td>Suco em pó</td>
+                <td class="num">8</td>
+                <td class="num">R$ 0.49</td>
             </tr>
         </tbody>
+
         <tfoot>
-            <tr>
-                <th colspan="2" class="total">
+            <tr> <!--scope="row" Conteúdo está ao lado, na mesma linha-->
+                <th colspan="2" class="total" scope="row">
                     Total
                 </th>
-                <td class="num"><strong>R$ 37,00</strong></td>
+                <td class="num"><strong>R$ 311,62</strong></td>
             </tr>
         </tfoot>
+
     </table>
 </body>
 </html>
