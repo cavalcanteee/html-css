@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes sociais</title>
+    <style>
+        body {
+            background: black url(img/fundo-madeira.jpg) no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .iphone-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #iphone, #telahome {
+            display: block;
+        }
+
+        #buthome {
+            position: absolute;
+            width: 49px;
+            border-radius: 50%;
+
+            bottom: 18px;
+            left: 49.9%;
+            transform: translateX(-50%);
+        }
+
+        .botao {
+            display: block;
+            width: 50px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        div.navegar {
+            position: absolute;
+            right: 0;
+        }
+
+        iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 268px;
+            height: 478px;
+            border: 1px solid white;
+        }
+    </style>
 </head>
 <body>
+    <div class="iphone-container">
+        <img src="img/frame-iphone.png" alt="" id="iphone">
+        
+        <a href="iphone/home.html" target="tela"><img src="img/logo-home.jpg" alt="" id="buthome"></a>
+    </div>
     
+    <iframe src="iphone/home.html" name="tela" frameborder="0" ></iframe>
+
+    <nav>
+        <div class="navegar">
+
+            <a href="iphone/youtube.html"
+            target="tela"><img src="img/logo-youtube.jpg"  alt="" class="botao"></a>
+
+            <a href="iphone/github.html" target="tela"><img src="img/logo-github.jpg" alt="" class="botao"></a>
+
+            <a href="iphone/instagram.html" target="tela"><img src="img/logo-instagram.jpg" alt="" class="botao"></a>
+
+            <a href="iphone/twitter.html" target="tela"><img src="img/logo-twitter.jpg" alt="" class="botao"></a>
+
+            <a href="iphone/facebook.html" target="tela"><img src="img/logo-facebook.jpg" alt="" class="botao"></a>
+
+        </div>
+    </nav>
 </body>
 </html>
