@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 01</title>
+</head>
+<body>
+    <form action="cadastro.html" autocomplete="off" method="post">
+
+        <label for="iprod">Produto: </label>
+
+        <select name="produto" id="iprod">
+            <optgroup label="Brinquedos">
+                <option value="boneco">Boneco</option>
+                <option value="carrinho">Carrinho</option>
+                <option value="bola">Bola</option>
+                <option value="peteca">Peteca</option>
+            </optgroup>
+        
+            <optgroup label="Eletrônicos">
+                <option value="celular">Celular</option>
+                <option value="tablet">Tablet</option>
+                <option value="computador">Computador</option>
+                <option value="monitor">Monitor</option>
+            </optgroup>
+
+            <optgroup label="Moda">
+                <option value="calca">Calça</option>
+                <option value="short">Short</option>
+                <option value="camisa">Camisa</option>
+                <option value="sapato">Sapato</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option>Policial</option>
+            <option>Engenheiro</option>
+            <option>Professor</option>
+            <option>Médico</option>
+        </datalist>
+
+        <br><br>
+
+        <label for="iarea">Escreva sua mensagem: </label><br>
+        <textarea name="area" id="iarea" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
