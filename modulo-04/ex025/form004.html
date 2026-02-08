@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 04</title>
+</head>
+<body>
+    <form action="cadastro.html">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <br>
+
+            <label for="iemail">Digite seu email: </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email" pattern="\w+@\w+\.\w+">
+
+            <br><br>
+
+            <label for="itel">Digite seu número: </label>
+            <input type="tel, number" name="tel" id="itel" pattern="^\(?\d{2}\)?\s?9\d{4}-?\d{4}$" required>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+    </form>
+</body>
+</html>
