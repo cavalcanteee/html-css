@@ -26,22 +26,28 @@
             position: absolute;
             width: 49px;
             border-radius: 50%;
-
             bottom: 18px;
             left: 49.9%;
             transform: translateX(-50%);
         }
 
-        .botao {
-            display: block;
-            width: 50px;
-            border-radius: 50%;
-            padding: 10px;
+        section {
+            text-align: right;
         }
 
-        div.navegar {
-            position: absolute;
-            right: 0;
+        .botao {
+            width: 60px;
+            border-radius: 50%;
+            margin: 10px;
+            box-sizing: border-box;
+            box-shadow: 3px  3px 5px black;
+        }
+
+        .botao:hover {
+            border: 3px solid rgba(255, 255, 255, 0.60);
+            transform: translate(-3px, -3px);
+            box-shadow: 6px  6px 15px black;
+            transition-duration: 0.2s;
         }
 
         iframe {
@@ -65,20 +71,20 @@
     <iframe src="iphone/home.html" name="tela" frameborder="0" ></iframe>
 
     <nav>
-        <div class="navegar">
+        <section class="navegar">
 
             <a href="iphone/youtube.html"
             target="tela"><img src="img/logo-youtube.jpg"  alt="" class="botao"></a>
-
+            <br>
             <a href="iphone/github.html" target="tela"><img src="img/logo-github.jpg" alt="" class="botao"></a>
-
+            <br>            
             <a href="iphone/instagram.html" target="tela"><img src="img/logo-instagram.jpg" alt="" class="botao"></a>
-
+            <br>
             <a href="iphone/twitter.html" target="tela"><img src="img/logo-twitter.jpg" alt="" class="botao"></a>
-
+            <br>
             <a href="iphone/facebook.html" target="tela"><img src="img/logo-facebook.jpg" alt="" class="botao"></a>
 
-        </div>
+        </section>
     </nav>
 </body>
 </html>
