@@ -25,3 +25,6 @@ p {
     line-height: 1.5em;
 }
 
+article::after {
+    content: 'Esse artigo foi criado por Cavalcanteee';
+}
