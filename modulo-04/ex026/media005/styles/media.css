@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Mobile até 480px*/
+/* Mobile grande 481px – 768px*/
+/* Tablet 768px – 1024px*/
+/* Desktop 1025px – 1920px*/
+/* Desktop grande / TV acima de 1920px*/
+
+@media (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
