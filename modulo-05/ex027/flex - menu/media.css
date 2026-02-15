@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Mobile até 480px*/
+/* Mobile grande 481px – 768px*/
+/* Tablet 768px – 1024px*/
+/* Desktop 1025px – 1920px*/
+/* Desktop grande / TV acima de 1920px*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    header {
+       align-items: flex-start;
+       justify-content: flex-start;
+       padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    nav > a {
+        margin: 0px;
+        width: 90px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    header > h1 {
+        margin: 0;
+    }
+
+    main {
+        width: 768px;
+    }
+    nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    nav > a {
+        width: 90px;
+        margin: 0px;
+    }
+}
